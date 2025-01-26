@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<!-- Usamos el tymeleaf porq son datos dinamicos es decir que el dato del backend contrlador cambiara aqui en la vista -->
+<html lang="es" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Bienvenida</title>
+</head>
+<body>
+<!-- para usar o llamar los datos dinamicos q vienen desde controlador usamos el $ dolar  -->
+<h1 th:text="${mensaje}">Aui tienes mi saludo </h1>
+<p>TU nombre es: <span th:text="${nombre}">Tu nombre Aqui</span></p>
+</body>
+</html>
